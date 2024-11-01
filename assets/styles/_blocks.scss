@@ -1,0 +1,43 @@
+section.tow-side-text-block {
+    padding: 115px 0 80px;
+
+    .animation-texts {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    .text-wrap {
+        margin-top: 75px;
+
+        .text-title {
+            h4 {
+                color: var(--white);
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 350;
+                line-height: 36px;
+                letter-spacing: -0.26px;
+            }
+        }
+
+        .text-content {
+            p {
+                color: var(--white);
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: var(--primary-font);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 22px;
+                margin-bottom: 12px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+section.banner-area {
+    display: flex;
+    align-items: center;
+
+    .hero-wrapper {
+        width: 100%;
+
+        .swiper {
+            .swiper-slide {
+                .wrapper-content {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    border-radius: 0px 0px 50px 50px;
+                    overflow: hidden;
+
+                    .bg-image-video {
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+
+                        .gradient-overlay {
+                            border-radius: 0px 0px 50px 50px;
+                        }
+
+                        .bg-content {
+                            border-radius: 0px 0px 50px 50px;
+                            width: 100%;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                    }
+
+                    .hero-content {
+                        width: 100%;
+                        position: relative;
+                        z-index: 11;
+                        padding: 100px 0;
+
+                        h1 {
+                            color: var(--white);
+                            font-feature-settings: 'liga' off, 'clig' off;
+                            font-family: var(--primary-font);
+                            font-size: 80px;
+                            font-style: normal;
+                            font-weight: 325;
+                            line-height: 90px;
+                            letter-spacing: -0.26px;
+                        }
+
+                        p {
+                            color: var(--white);
+                            font-feature-settings: 'liga' off, 'clig' off;
+                            font-family: Gotham;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 22px;
+                            margin-top: 16px;
+                        }
+
+                        .hero-btns {
+                            margin-top: 50px;
+                            column-gap: 43px;
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.heigh {
+        min-height: 875px;
+
+        .hero-wrapper {
+
+            .swiper {
+
+                .swiper-slide {
+                    min-height: 875px;
+
+                    .wrapper-content {
+                        min-height: 875px;
+
+                        .bg-image-video {
+
+                            .gradient-overlay {
+                                position: absolute;
+                                background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.5%, rgba(0, 0, 0, 0.90) 99.95%);
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                height: 100%;
+                                width: 100%;
+                                z-index: 1;
+
+                            }
+
+                            .bg-content {
+                                min-height: 875px;
+                            }
+                        }
+
+                        .hero-content {
+                            h1 {
+                                max-width: 720px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    // &.normal {}
+}

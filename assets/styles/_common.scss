@@ -1,0 +1,51 @@
+/* ANIMATION BIG TEXT START */
+.animation-texts {
+    h2 {
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: var(--primary-font);
+        font-size: 120px;
+        font-style: normal;
+        font-weight: 275;
+        line-height: 87px;
+        text-transform: uppercase;
+    }
+
+    .text-with-wheel {
+        display: flex;
+        align-items: center;
+    }
+
+    .light {
+        color: var(--white);
+    }
+
+    .opacity_low {
+        opacity: 0.1;
+    }
+
+    .opacity_medium {
+        opacity: 0.3;
+    }
+
+    .opacity_normal {
+        opacity: 1;
+    }
+
+    .align_left {
+        text-align: left;
+    }
+
+    .align_right {
+        text-align: right;
+    }
+
+    .align_right_with_wheel {
+        justify-content: flex-end;
+    }
+
+    .align_left_with_wheel {
+        justify-content: flex-start;
+    }
+}
+
+/* ANIMATION BIG TEXT END */

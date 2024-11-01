@@ -1,0 +1,174 @@
+/* GOTHAM FONT */
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-XLight.eot");
+  src:
+    url("../fonts/Gotham-XLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gotham-XLight.woff2") format("woff2"),
+    url("../fonts/Gotham-XLight.woff") format("woff"),
+    url("../fonts/Gotham-XLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Light.eot");
+  src: url("../fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gotham-Light.woff2") format("woff2"),
+    url("../fonts/Gotham-Light.woff") format("woff"),
+    url("../fonts/Gotham-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Medium.eot");
+  src: url("../fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gotham-Medium.woff2") format("woff2"),
+    url("../fonts/Gotham-Medium.woff") format("woff"),
+    url("../fonts/Gotham-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+:root {
+  /* :::::: Fonts :::::: */
+  --primary-font: "Gotham", sans-serif;
+
+  /* :::::: Colors :::::: */
+  --primary-color: #FA1B38;
+  --MainColor_Dark: #191919;
+  --MainColor_Darkess: #141414;
+  --light_gray: #F2F1F1;
+  --white: #FFFFFF;
+  --black: #000;
+  --error-color: #c00;
+
+}
+
+h1 {
+  color: var(--white);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: var(--primary-font);
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 56px;
+  letter-spacing: -0.26px;
+}
+
+h2 {
+  color: var(--White, #FFF);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: var(--primary-font);
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 56px;
+  letter-spacing: -0.26px;
+}
+
+h3 {
+  color: var(--white);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: var(--primary-font);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 48px;
+  letter-spacing: -0.26px;
+}
+
+h4 {
+  color: var(--white);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: var(--primary-font);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 34px;
+  letter-spacing: -0.26px;
+}
+
+h5 {
+  color: var(--white);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 34px;
+  letter-spacing: -0.26px;
+}
+
+h6 {
+  color: var(--white);
+  font-family: var(--secondary-font);
+}
+
+p {
+  color: var(--white);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  margin-bottom: 0px;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 5px;
+
+  li {
+    color: var(--MainColor_Darkess);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%;
+    margin-bottom: 0.5rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 3px;
+      border-radius: 100%;
+      background: var(--MainColor_Darkess);
+      top: 10px;
+      left: -10px;
+    }
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.not-sr-only {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
