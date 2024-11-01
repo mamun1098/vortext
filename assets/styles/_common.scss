@@ -1,5 +1,7 @@
 /* ANIMATION BIG TEXT START */
 .animation-texts {
+    position: relative;
+
     h2 {
         font-feature-settings: 'liga' off, 'clig' off;
         font-family: var(--primary-font);
@@ -8,11 +10,17 @@
         font-weight: 275;
         line-height: 87px;
         text-transform: uppercase;
+        position: absolute;
     }
 
     .text-with-wheel {
         display: flex;
         align-items: center;
+        position: absolute;
+
+        h2 {
+            position: relative;
+        }
     }
 
     .light {
@@ -33,18 +41,24 @@
 
     .align_left {
         text-align: left;
+        left: 0;
+        white-space: nowrap;
     }
 
     .align_right {
         text-align: right;
+        right: 0;
+        white-space: nowrap;
     }
 
     .align_right_with_wheel {
         justify-content: flex-end;
+        right: 0;
     }
 
     .align_left_with_wheel {
         justify-content: flex-start;
+        left: 0;
     }
 }
 
