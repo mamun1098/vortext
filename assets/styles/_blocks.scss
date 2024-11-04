@@ -1,56 +1,171 @@
-section.tow-side-text-block {
-    padding: 115px 0 80px;
-    overflow: hidden;
-    position: relative;
+/* INNOVATION SLIDER START */
+section.innovation-slider-block {
+    padding-bottom: 320px;
 
-    .animation-texts {
-        display: flex;
-        flex-direction: column;
-        row-gap: 60px;
-        height: 360px;
+    .swiper {
+        padding-top: 100px;
 
-        .opacity_low {}
+        .swiper-slide {
+            .signle-wrapper {
+                position: relative;
+                transition: top 0.5s ease;
+                top: 0;
+            }
 
-        .text-with-wheel {
-            top: 140px;
-        }
+            .bottom-btn {
+                transition: all 0.3s ease-in-out;
+                display: none;
+            }
 
-        .opacity_normal {
-            top: 280px;
+            &.swiper-slide-active {
+                .signle-wrapper {
+                    position: relative;
+                    top: -100px;
+                    transition: top 0.5s ease;
+                }
+
+                .bottom-btn {
+                    text-align: center;
+                    margin-top: 50px;
+                    display: block;
+                }
+            }
         }
     }
 
-    .text-wrap {
-        margin-top: 75px;
+    .single-card {
+        border-radius: 30px;
+        border: 0.5px solid rgba(255, 255, 255, 0.70);
+        background: rgba(255, 255, 255, 0.05);
+        padding: 40px 30px 20px 30px;
+        height: 100%;
 
-        .text-title {
-            h4 {
-                color: var(--white);
-                font-feature-settings: 'liga' off, 'clig' off;
-                font-size: 28px;
-                font-style: normal;
-                font-weight: 350;
-                line-height: 36px;
-                letter-spacing: -0.26px;
+        img {
+            max-width: 65px;
+            max-height: 65px;
+        }
+
+        .title {
+            min-height: 40px;
+            color: var(--white);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: var(--primary-font);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            margin-top: 20px;
+        }
+
+        .content {
+            color: var(--white);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: var(--primary-font);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px;
+            min-height: 88px;
+            margin-top: 15px;
+        }
+    }
+
+
+
+    .slider-btns {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 20px;
+        margin-top: -15px;
+
+
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: relative;
+            margin-top: 0 !important;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100px;
+            border: 1px solid rgba(255, 255, 255, 0.30);
+            top: unset;
+            left: unset;
+            right: unset;
+            transition: all 0.3s ease-in-out;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: calc(100% - 8px);
+                background: rgba(255, 255, 255, 0.05);
+                height: calc(100% - 8px);
+                left: 4px;
+                top: 4px;
+                border-radius: 100%;
+                transition: all 0.3s ease-in-out;
+            }
+
+            svg {
+                max-width: 12px;
+            }
+
+
+            &::after {
+                display: none;
+            }
+
+            &:hover {
+                &::before {
+                    background: rgba(255, 255, 255, 0.2);
+                }
+            }
+
+        }
+
+        .swiper-scrollbar {
+            background: rgba(255, 255, 255, 0.20);
+            height: 1px;
+            margin: 0;
+            position: static;
+            width: 295px;
+
+
+            .swiper-scrollbar-drag {
+                background: rgba(255, 255, 255, 0.80);
             }
         }
 
-        .text-content {
-            p {
-                color: var(--white);
-                font-feature-settings: 'liga' off, 'clig' off;
-                font-family: var(--primary-font);
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: 22px;
-                margin-bottom: 12px;
+        .btns {
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+        }
 
-                &:last-child {
-                    margin-bottom: 0;
+        .swiper-pagination {
+            position: unset;
+            margin-top: 50px;
+            display: none;
+
+
+
+            .swiper-pagination-bullet {
+                width: 6px;
+                height: 6px;
+                margin: 0 0px !important;
+                margin-right: 6px !important;
+                background: var(--orange);
+                opacity: 50%;
+
+                &.swiper-pagination-bullet-active {
+                    opacity: 100%;
                 }
-
             }
         }
     }
 }
+
+/* INNOVATION SLIDER END */

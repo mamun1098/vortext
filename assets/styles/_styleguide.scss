@@ -1,37 +1,114 @@
 /* GOTHAM FONT */
+// @font-face {
+//   font-family: "Gotham";
+//   src: url("../fonts/Gotham-XLight.eot");
+//   src:
+//     url("../fonts/Gotham-XLight.eot?#iefix") format("embedded-opentype"),
+//     url("../fonts/Gotham-XLight.woff2") format("woff2"),
+//     url("../fonts/Gotham-XLight.woff") format("woff"),
+//     url("../fonts/Gotham-XLight.ttf") format("truetype");
+//   font-weight: 200;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "Gotham";
+//   src: url("../fonts/Gotham-Light.eot");
+//   src: url("../fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"),
+//     url("../fonts/Gotham-Light.woff2") format("woff2"),
+//     url("../fonts/Gotham-Light.woff") format("woff"),
+//     url("../fonts/Gotham-Light.ttf") format("truetype");
+//   font-weight: 300;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "Gotham";
+//   src: url("../fonts/Gotham-Medium.eot");
+//   src: url("../fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"),
+//     url("../fonts/Gotham-Medium.woff2") format("woff2"),
+//     url("../fonts/Gotham-Medium.woff") format("woff"),
+//     url("../fonts/Gotham-Medium.ttf") format("truetype");
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+
+/* GOTHAM FROM GITHUB START */
+// font-weight: 100; * Gotham Thin *
+
 @font-face {
-  font-family: "Gotham";
-  src: url("../fonts/Gotham-XLight.eot");
-  src:
-    url("../fonts/Gotham-XLight.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Gotham-XLight.woff2") format("woff2"),
-    url("../fonts/Gotham-XLight.woff") format("woff"),
-    url("../fonts/Gotham-XLight.ttf") format("truetype");
+  font-family: 'Gotham';
+  src: url('../fonts/gotham-git/gothamthin-webfont.woff2') format('woff2'),
+    url('../fonts/gotham-git/gothamthin-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+
+}
+
+// font-weight: 200; Gotham Extra Light
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/gotham-git/gothamxlight-webfont.woff2') format('woff2'),
+    url('../fonts/gotham-git/gothamxlight-webfont.woff') format('woff');
   font-weight: 200;
   font-style: normal;
+
 }
 
+// font-weight: 300; Gotham Light
 @font-face {
-  font-family: "Gotham";
-  src: url("../fonts/Gotham-Light.eot");
-  src: url("../fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Gotham-Light.woff2") format("woff2"),
-    url("../fonts/Gotham-Light.woff") format("woff"),
-    url("../fonts/Gotham-Light.ttf") format("truetype");
+  font-family: 'Gotham';
+  src: url('../fonts/gotham-git/gothamlight-webfont.woff2') format('woff2'),
+    url('../fonts/gotham-git/gothamlight-webfont.woff') format('woff');
   font-weight: 300;
   font-style: normal;
+
 }
 
+// font-weight: 500; Gotham Medium
 @font-face {
-  font-family: "Gotham";
-  src: url("../fonts/Gotham-Medium.eot");
-  src: url("../fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Gotham-Medium.woff2") format("woff2"),
-    url("../fonts/Gotham-Medium.woff") format("woff"),
-    url("../fonts/Gotham-Medium.ttf") format("truetype");
+  font-family: 'Gotham';
+  src: url('../fonts/gotham-git/gothammedium-webfont.woff2') format('woff2'),
+    url('../fonts/gotham-git/gothammedium-webfont.woff') format('woff');
   font-weight: 500;
   font-style: normal;
+
 }
+
+// font-weight: bold; Gotham Bold 
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/gotham-git/gothambold-webfont.woff2') format('woff2'),
+    url('../fonts/gotham-git/gothambold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+// font-weight: 800; Gotham Black
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/gotham-git/gothamblack-webfont.woff2') format('woff2'),
+    url('../fonts/gotham-git/gothamblack-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+
+}
+
+// font-weight: 900; Gotham Ultra
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/gotham-git/gothamultra-webfont.woff2') format('woff2'),
+    url('../fonts/gotham-git/gothamultra-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* GOTHAM FROM GITHUB END */
+
+
+
 
 
 :root {

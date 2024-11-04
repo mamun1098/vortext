@@ -31,6 +31,45 @@ setTimeout(function () {
       });
     });
   }
+  /* HERO SLIDER END */
+
+  /* INNOVATION SLIDER START */
+  const inovationSlider = document.querySelectorAll(
+    ".innovation-slider-block .swiper"
+  );
+  if (inovationSlider.length > 0) {
+    inovationSlider.forEach((swiperElement, i) => {
+      const uniqueClass = `innovaSw_${i}`;
+      swiperElement.classList.add(uniqueClass);
+
+      const swiper = new Swiper(`.${uniqueClass}`, {
+        watchOverflow: true,
+        spaceBetween: 20,
+        loop: true,
+        slidesPerView: 5,
+        speed: 500,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: `.${uniqueClass} .swiper-button-next`,
+          prevEl: `.${uniqueClass} .swiper-button-prev`,
+        },
+
+        scrollbar: {
+          el: `.${uniqueClass} .swiper-scrollbar`,
+          draggable: true,
+        },
+
+        breakpoints: {
+          1920: {
+            slidesPerView: 4.9,
+            centeredSlides: true,
+          },
+        },
+      });
+    });
+  }
+  /* INNOVATION SLIDER END */
 
   // ROTATE ANIMATION ON CIRCLE
   var winScrollTop = 0;
