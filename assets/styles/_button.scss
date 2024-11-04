@@ -102,6 +102,24 @@ button.button {
       }
     }
   }
+
+  &.red_black {
+    background: var(--primary-color);
+    color: var(--white);
+
+    &::before {
+      background-color: var(--MainColor_Dark);
+    }
+
+    &:hover {
+      background: var(--MainColor_Dark);
+      color: var(--white);
+
+      &::before {
+        background-color: var(--primary-color);
+      }
+    }
+  }
 }
 
 

@@ -71,6 +71,90 @@ setTimeout(function () {
   }
   /* INNOVATION SLIDER END */
 
+  /* MEMBERSHIP LOGO SLIDER START */
+  const memberShipSlider = document.querySelectorAll(
+    ".membership-logo-block .swiper"
+  );
+  if (memberShipSlider.length > 0) {
+    memberShipSlider.forEach((swiperElement, i) => {
+      const uniqueClass = `membershipSlider_${i}`;
+      swiperElement.classList.add(uniqueClass);
+
+      const swiper = new Swiper(`.${uniqueClass}`, {
+        // watchOverflow: true,
+        spaceBetween: 70,
+        loop: true,
+        slidesPerView: 5,
+        speed: 500,
+        // autoplay: {
+        //   delay: 1,
+        //   disableOnInteraction: true,
+        // },
+        // speed: 2000,
+        // Navigation arrows
+
+        navigation: {
+          nextEl: `.${uniqueClass} .swiper-button-next`,
+          prevEl: `.${uniqueClass} .swiper-button-prev`,
+        },
+
+        scrollbar: {
+          el: `.${uniqueClass} .swiper-scrollbar`,
+          draggable: true,
+        },
+
+        breakpoints: {
+          1920: {
+            slidesPerView: 5,
+          },
+        },
+      });
+    });
+  }
+  /* MEMBERSHIP LOGO SLIDER END */
+
+  /* SUCCESS STROY SLIDER START */
+  const successStory = document.querySelectorAll(
+    ".success-story-slider-block .swiper"
+  );
+  if (successStory.length > 0) {
+    successStory.forEach((swiperElement, i) => {
+      const uniqueClass = `sucessSlider_${i}`;
+      swiperElement.classList.add(uniqueClass);
+
+      const swiper = new Swiper(`.${uniqueClass}`, {
+        // watchOverflow: true,
+        spaceBetween: 30,
+        loop: true,
+        slidesPerView: 1.7,
+        speed: 500,
+        // autoplay: {
+        //   delay: 1,
+        //   disableOnInteraction: true,
+        // },
+        // speed: 2000,
+        // Navigation arrows
+
+        navigation: {
+          nextEl: `.${uniqueClass} .swiper-button-next`,
+          prevEl: `.${uniqueClass} .swiper-button-prev`,
+        },
+
+        scrollbar: {
+          el: `.${uniqueClass} .swiper-scrollbar`,
+          draggable: true,
+        },
+
+        breakpoints: {
+          1920: {
+            slidesPerView: 1.7,
+          },
+        },
+      });
+    });
+  }
+  /* SUCCESS STROY SLIDER END */
+
   // ROTATE ANIMATION ON CIRCLE
   var winScrollTop = 0;
 

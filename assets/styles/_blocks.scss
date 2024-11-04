@@ -169,3 +169,239 @@ section.innovation-slider-block {
 }
 
 /* INNOVATION SLIDER END */
+
+/* MEMBERSHIP LOGO SLIDER BLOCK START */
+section.membership-logo-block {
+    padding: 40px 0;
+    background: var(--white);
+
+    .swiper-wrapper {
+        align-items: center;
+
+        .swiper-slide {
+            text-align: center;
+            width: fit-content !important;
+
+            img {
+                max-width: 100%;
+                max-height: 70px;
+                max-width: 242px;
+            }
+        }
+    }
+
+    .bottom-button {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+}
+
+/* MEMBERSHIP LOGO SLIDER BLOCK END */
+
+/* SUCCESS STORY SLIDER BLOCK START */
+section.success-story-slider-block {
+    background: var(--white);
+    padding: 40px 0 80px;
+
+    .small-border-title {
+        margin-bottom: 75px;
+    }
+
+    .slider-innitial {
+        position: relative;
+        max-width: 77%;
+        margin-left: auto;
+
+        .section-title {
+            max-width: 350px;
+        }
+
+        .success-slides-wrap {
+
+            .swiper-slide {
+                height: auto;
+            }
+
+            .single-item {
+                position: relative;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    border-radius: 18px;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .content {
+                    background: var(--primary-color);
+                    display: inline-flex;
+                    flex-direction: column;
+                    padding: 45px 35px 20px 35px;
+                    max-width: 312px;
+                    border-top-left-radius: 24px;
+                    border-top-right-radius: 24px;
+                    position: absolute;
+                    bottom: 0;
+                    z-index: 11;
+                    right: 28px;
+
+                    h3 {
+                        color: var(--white);
+                        font-feature-settings: 'liga' off, 'clig' off;
+                        font-family: Gotham;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 350;
+                        line-height: 36px;
+                        letter-spacing: -0.26px;
+                        min-height: 70px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 22px;
+                        color: var(--white);
+                        margin-top: 12px;
+                    }
+
+                    .read-more {
+                        margin-top: 20px;
+                        display: inline-flex;
+                        align-items: center;
+                        column-gap: 4px;
+                        color: var(--white);
+                        font-feature-settings: 'liga' off, 'clig' off;
+                        font-family: Gotham;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 350;
+                        line-height: 24px;
+                        opacity: 0.5;
+                        transition: all 0.3s ease-in-out;
+                        text-decoration: none;
+
+                        &:hover {
+                            opacity: 1;
+                            text-decoration: underline;
+                        }
+
+                        .icon {
+                            img {
+                                width: 6px;
+                                height: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .slider-btns {
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            margin-left: auto;
+            margin-top: 60px;
+            max-width: 720px;
+
+
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                position: relative;
+                margin-top: 0 !important;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100px;
+                border: 1px solid rgba(25, 25, 25, 0.30);
+                top: unset;
+                left: unset;
+                right: unset;
+                transition: all 0.3s ease-in-out;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: calc(100% - 8px);
+                    background: rgba(25, 25, 25, 0.05);
+                    height: calc(100% - 8px);
+                    left: 4px;
+                    top: 4px;
+                    border-radius: 100%;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                svg {
+                    max-width: 12px;
+                }
+
+
+                &::after {
+                    display: none;
+                }
+
+                &:hover {
+                    &::before {
+                        background: rgba(25, 25, 25, 0.1);
+                    }
+                }
+
+            }
+
+            .swiper-scrollbar {
+                background: rgba(25, 25, 25, 0.2);
+                height: 1px;
+                margin: 0;
+                position: static;
+                width: 295px;
+
+
+                .swiper-scrollbar-drag {
+                    background: rgba(25, 25, 25, 0.8);
+                }
+            }
+
+            .btns {
+                display: flex;
+                align-items: center;
+                column-gap: 15px;
+            }
+
+            .swiper-pagination {
+                position: unset;
+                margin-top: 50px;
+                display: none;
+
+
+
+                .swiper-pagination-bullet {
+                    width: 6px;
+                    height: 6px;
+                    margin: 0 0px !important;
+                    margin-right: 6px !important;
+                    background: var(--orange);
+                    opacity: 50%;
+
+                    &.swiper-pagination-bullet-active {
+                        opacity: 100%;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .bottom-button {
+        text-align: center;
+        margin-top: 60px;
+    }
+}
+
+/* SUCCESS STORY SLIDER BLOCK END */
