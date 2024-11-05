@@ -155,40 +155,34 @@ setTimeout(function () {
   }
   /* SUCCESS STROY SLIDER END */
 
-  // ROTATE ANIMATION ON CIRCLE
-  var winScrollTop = 0;
-
   // Function for rotation based on scroll position
   function rotateOnScroll(parentClassName, transition, className) {
-    $(parentClassName).each(function () {
-      var firstTop = $(this).offset().top;
-      var $tag = $(this).find(className);
+    // Get all parent elements
+    document.querySelectorAll(parentClassName).forEach((parentElement) => {
+      const firstTop =
+        parentElement.getBoundingClientRect().top + window.scrollY;
+      const tag = parentElement.querySelector(className);
 
       // Rotation calculation
-      var rotateAngle = (winScrollTop - firstTop) * 0.1; // Adjust speed factor for rotation
+      const rotateAngle = (window.scrollY - firstTop) * 0.1; // Adjust speed factor for rotation
 
       // Apply rotation transform
       if (transition) {
-        $tag.css({
-          transform: "rotate(" + rotateAngle + "deg)",
-          transition: "all .3s",
-        });
+        tag.style.transform = `rotate(${rotateAngle}deg)`;
+        tag.style.transition = "all .3s";
       } else {
-        $tag.css({
-          transform: "rotate(" + rotateAngle + "deg)",
-          transition: "unset",
-        });
+        tag.style.transform = `rotate(${rotateAngle}deg)`;
+        tag.style.transition = "unset";
       }
     });
   }
+
   // Event listener for window scroll
-  $(window).on("scroll", function () {
-    winScrollTop = $(this).scrollTop();
+  window.addEventListener("scroll", () => {
     rotateOnScroll(".parallax-top-shape-wrapper", true, ".parallax-shape");
     rotateOnScroll(".ring-shape-wrapper", true, ".spin-animation");
   });
 
-  // LEFT RIGHT TEXT ANIMATION
   // LEFT RIGHT TEXT ANIMATION
   function parallaxTextLeftRight(
     parrentClassName,
