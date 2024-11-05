@@ -38,7 +38,6 @@ section.banner-area {
                         width: 100%;
                         position: relative;
                         z-index: 11;
-                        padding: 100px 0;
 
                         h1 {
                             color: var(--white);
@@ -106,10 +105,54 @@ section.banner-area {
                         }
 
                         .hero-content {
+                            padding: 100px 0;
+
                             h1 {
                                 max-width: 720px;
                             }
                         }
+                    }
+
+                }
+            }
+        }
+    }
+
+    &.normal {
+        min-height: 500px;
+
+        .hero-wrapper {
+
+            .swiper {
+
+                .swiper-slide {
+                    min-height: 500px;
+
+                    .wrapper-content {
+                        min-height: 500px;
+
+                        .bg-image-video {
+
+                            .gradient-overlay {
+                                position: absolute;
+                                background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.5%, rgba(0, 0, 0, 0.90) 99.95%);
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                height: 100%;
+                                width: 100%;
+                                z-index: 1;
+                            }
+
+                            .bg-content {
+                                min-height: 500px;
+                            }
+                        }
+
+                        .hero-content {
+                            padding: 150px 0 100px;
+                        }
+
                     }
 
                 }

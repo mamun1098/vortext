@@ -120,10 +120,10 @@
   --MainColor_Dark: #191919;
   --MainColor_Darkess: #141414;
   --light_gray: #F2F1F1;
+  --Medium_Grey: #F4F4F6;
   --white: #FFFFFF;
   --black: #000;
   --error-color: #c00;
-
 }
 
 h1 {
@@ -213,6 +213,7 @@ ul {
     line-height: 125%;
     margin-bottom: 0.5rem;
     position: relative;
+    margin-bottom: 5px;
 
     &::before {
       content: "";

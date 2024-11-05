@@ -4,12 +4,17 @@ section.tow-side-text-block {
     padding: 115px 0 80px;
     overflow: hidden;
     position: relative;
+    background: var(--MainColor_Dark);
+
+    &.overlap {
+        padding: 205px 0 80px;
+        margin-top: -90px;
+    }
 
     .animation-texts {
         display: flex;
         flex-direction: column;
         row-gap: 60px;
-        height: 360px;
 
 
         .text-with-wheel {
@@ -106,3 +111,368 @@ section.why-choose-vortex {
 }
 
 /* WHY CHOOSE VORTEXT END */
+
+/* TOW SIDE ANIMATION TEXT START IN VORTEX COLAB PAGE */
+section.tow-side-animation-text {
+    padding: 40px 0;
+
+    .animation-texts {
+        row-gap: 35px;
+    }
+}
+
+/* TOW SIDE ANIMATION TEXT END IN VORTEX COLAB PAGE */
+
+/* COLLABORATE COLLAPSE SECTION START */
+section.collaborate-collapse-area {
+    padding: 40px 0;
+
+    .collapse-wrapper {
+        .accordion-item {
+            border-radius: 66px;
+            border: 0.5px solid rgba(25, 25, 25, 0.30);
+            background: var(--white);
+            box-shadow: -4px 4px 15px 0px rgba(0, 0, 0, 0.05);
+            padding: 10px 10px 10px 14px;
+            margin-bottom: 20px;
+            transition: all 0.1s ease-in-out;
+
+            &.active {
+                border-radius: 20px;
+            }
+
+            .accordion-header {
+                .accordion-button {
+                    box-shadow: none;
+                    padding: 0;
+                    border-radius: 0px;
+                    border: none;
+                    outline: none;
+
+                    &:not(.collapsed) {
+                        background: transparent;
+                    }
+
+                    .heading {
+                        color: var(--MainColor_Dark);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 350;
+                        line-height: 20px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        min-width: 140px;
+                        padding: 5px 10px;
+                        border-radius: 100px;
+                        background: var(--Medium_Grey);
+                    }
+
+                    &::after {
+                        background-image: url("../images/static/accor-arrow.svg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-size: 10px 10px;
+                        width: 18px;
+                        height: 18px;
+                        background-color: var(--primary-color);
+                        border-radius: 100%;
+
+                    }
+
+                    &.collapsed {
+                        &::after {
+                            transform: rotate(0deg);
+                        }
+                    }
+
+                }
+
+            }
+
+            .accordion-body {
+                padding: 0;
+                margin-top: 20px;
+                padding-left: 40px;
+
+                p {
+                    color: var(--blue);
+                    font-feature-settings:
+                        "clig" off,
+                        "liga" off;
+                    font-family: var(--primary-font);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 20px;
+                    letter-spacing: 0.16px;
+                    opacity: 80%;
+                    margin-bottom: 20px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    strong {
+                        font-weight: 500;
+                    }
+                }
+
+                .associates-list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    row-gap: 40px;
+                    padding-left: 0;
+
+                    li {
+                        margin-bottom: 0;
+                        flex: 1 1 18%;
+                        max-width: 18%;
+
+                        img {
+                            width: 100%;
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+
+                ul {
+                    li {
+                        margin-bottom: 15px;
+                        font-family: var(--primary-font);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 20px;
+                        letter-spacing: 0.16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* COLLABORATE COLLAPSE SECTION END */
+
+/* CORE MANAGEMENT SECTION START  */
+section.core-management-area {
+    padding: 80px 0 40px;
+    margin: 40px 0;
+    background: var(--MainColor_Dark);
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .animation-texts {
+        row-gap: 18px;
+        padding: 40px 0;
+
+        .text-with-wheel {
+            column-gap: 20px;
+        }
+    }
+
+    .wrappers {
+        padding: 40px 0;
+
+        .col-lg-10 {
+            .row {
+                row-gap: 40px;
+            }
+        }
+
+        .single-member {
+            text-align: center;
+
+            img {
+                min-width: 120px;
+                min-height: 120px;
+                max-width: 120px;
+                max-height: 120px;
+                object-fit: cover;
+                border-radius: 100%;
+                background: var(--Medium_Grey);
+            }
+
+            .title {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                max-width: 295px;
+                margin: 20px auto 0;
+            }
+
+            .description {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 22px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+/* CORE MANAGEMENT SECTION END  */
+
+/* GUIDINCE PRICIPLES AREA START */
+section.guiding-principle-area {
+    padding: 40px 0;
+
+    .wrappers {
+        align-items: center;
+
+        .section-title {
+            h4 {
+                color: var(--MainColor_Dark);
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 36px;
+                letter-spacing: -0.26px;
+                max-width: 350px;
+            }
+        }
+
+        .single-principle {
+            .img-with-link {
+                width: 100%;
+                border-radius: 26px;
+                background: var(--Medium_Grey);
+                min-height: 345px;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    border-radius: 26px;
+                    object-fit: cover;
+                }
+
+                .donload {
+                    width: 30px;
+                    height: 30px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: var(--primary-color);
+                    border-radius: 100%;
+                    position: absolute;
+                    left: 12px;
+                    bottom: 12px;
+
+                    img {
+                        width: 14px;
+                        height: 15px;
+                    }
+                }
+            }
+
+            h5 {
+                color: var(--MainColor_Dark);
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+/* GUIDINCE PRICIPLES AREA END */
+
+/* ANNUAL REPORTS AREA START */
+section.annual-report-area {
+    padding: 40px 0;
+
+    .section-title {
+        h4 {
+            color: var(--MainColor_Dark);
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: -0.26px;
+            text-align: center;
+        }
+    }
+
+    .wrappers {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .single-reports {
+            max-width: 190px;
+            text-align: center;
+            width: 100%;
+
+            .img-with-link {
+                width: calc(100% - 46px);
+                border-radius: 16px;
+                background: var(--Medium_Grey);
+                min-height: 200px;
+                position: relative;
+                margin: auto;
+
+                img {
+                    width: 100%;
+                    border-radius: 16px;
+                    object-fit: cover;
+                }
+
+                .donload {
+                    width: 30px;
+                    height: 30px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: var(--primary-color);
+                    border-radius: 100%;
+                    position: absolute;
+                    left: 12px;
+                    bottom: 12px;
+
+                    img {
+                        width: 14px;
+                        height: 15px;
+                    }
+                }
+            }
+
+            h5 {
+                color: var(--MainColor_Dark);
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                margin-top: 20px;
+            }
+
+            p {
+                color: var(--MainColor_Dark);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 22px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+}
+
+/* ANNUAL REPORTS AREA END */

@@ -1,16 +1,98 @@
+/* section title start */
+.section-title {
+    margin-bottom: 40px;
+
+    h2 {
+        color: var(--MainColor_Dark);
+        text-align: center;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: var(--primary-font);
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 350;
+        line-height: 36px;
+        letter-spacing: -0.26px;
+        text-align: left;
+    }
+
+    p {
+        color: var(--MainColor_Dark);
+        text-align: center;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: var(--primary-font);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 22px;
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    &.white {
+        h2 {
+            color: var(--white);
+        }
+
+        p {
+            color: var(--white);
+        }
+    }
+
+    &.text-center {
+        text-align: center;
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+}
+
+.small-border-title {
+    padding: 0 30px;
+
+    .borders {
+        width: 100%;
+        height: 5px;
+        border: 0.5px solid rgba(25, 25, 25, 0.5);
+        border-bottom: 0px;
+        margin-bottom: 10px;
+    }
+
+    span {
+        color: var(--MainColor_Dark);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: var(--primary-font);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 350;
+        line-height: 24px;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+}
+
+/* section title end */
+
+
 /* ANIMATION BIG TEXT START */
 .animation-texts {
     position: relative;
+    display: flex;
+    flex-direction: column;
 
     h2 {
         font-feature-settings: 'liga' off, 'clig' off;
         font-family: var(--primary-font);
-        font-size: 120px;
+        // font-size: 120px;
+        font-size: 6.25vw;
         font-style: normal;
         font-weight: 300;
         line-height: 87px;
         text-transform: uppercase;
-        position: absolute;
 
         &.thin {
             font-weight: 200;
@@ -20,11 +102,11 @@
     .text-with-wheel {
         display: flex;
         align-items: center;
-        position: absolute;
 
         h2 {
             position: relative;
         }
+
     }
 
     .light {
@@ -63,6 +145,10 @@
     .align_left_with_wheel {
         justify-content: flex-start;
         left: 0;
+    }
+
+    .dark {
+        color: var(--MainColor_Dark);
     }
 }
 

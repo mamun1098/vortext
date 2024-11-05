@@ -185,6 +185,7 @@ setTimeout(function () {
   $(window).on("scroll", function () {
     winScrollTop = $(this).scrollTop();
     rotateOnScroll(".parallax-top-shape-wrapper", true, ".parallax-shape");
+    rotateOnScroll(".ring-shape-wrapper", true, ".spin-animation");
   });
 
   // LEFT RIGHT TEXT ANIMATION
@@ -228,6 +229,12 @@ setTimeout(function () {
       ".animation-texts",
       true,
       ".align_right", // This will apply to all right-aligned texts
+      false
+    );
+    parallaxTextLeftRight(
+      ".animation-texts",
+      true,
+      ".align_right_with_wheel", // This will apply to all right-aligned texts
       false
     );
   });
